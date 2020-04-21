@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source /opt/ros/melodic/setup.bash
+
 # create workspace
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/src
