@@ -1,4 +1,5 @@
 # docker-interactive_slam
+For details, see https://github.com/SMRT-AIST/interactive_slam
 
 # Support
 - melodic
