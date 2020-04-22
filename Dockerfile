@@ -9,6 +9,8 @@ RUN apt update && \
         ros-melodic-pcl-ros \
         ros-melodic-nmea-msgs \
         ros-melodic-libg2o \
+        vim \
+        tmux \
     && \
     apt autoremove -y && \
     apt clean && \
