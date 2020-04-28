@@ -6,5 +6,6 @@ source /opt/ros/melodic/setup.bash
 sh /tmp/install.sh
 rm /tmp/install.sh
 echo '#!/bin/sh' > /tmp/install.sh
+echo 'source /root/catkin_ws/devel/setup.bash' >> /root/.bashrc
 
 exec "$@"
