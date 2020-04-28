@@ -11,11 +11,6 @@ curl https://raw.githubusercontent.com/tiger0421/docker-interactive_slam/master/
 sudo chmod a+x launch.sh
 sh launch.sh 
 ```
-In a container  
-```
-source /opt/ros/melodic/setup.bash
-sh install_interactive_slam.sh
-```
 
 # Build
 ```
