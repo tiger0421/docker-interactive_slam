@@ -17,6 +17,7 @@ RUN apt update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /root
-RUN curl https://raw.githubusercontent.com/tiger0421/docker-interactive_slam/master/install_interactive_slam.sh > install_interactive_slam.sh && \
-    chmod a+x install_interactive_slam.sh
 
+COPY docker-entrypoint.sh /tmp
+ENTRYPOINT ["/tmp/docker-entrypoint.sh"]
+CMD ["/bin/bash"]
