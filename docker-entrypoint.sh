@@ -5,7 +5,8 @@ chmod 774 install.sh
 source /opt/ros/melodic/setup.bash
 sh /tmp/install.sh
 rm /tmp/install.sh
-echo '#!/bin/sh' > /tmp/install.sh
+echo '#!/bin/sh' > /tmp/docker-entrypoint.sh
+echo 'bash' >> /tmp/docker-entrypoint.sh
 echo 'source /root/catkin_ws/devel/setup.bash' >> /root/.bashrc
 
 exec "$@"
